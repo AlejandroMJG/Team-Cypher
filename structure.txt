@@ -1,0 +1,23 @@
+flashcards-app/
+│
+├── frontend/
+│   ├── pages/
+│   │   ├── source-input.html
+│   │   └── viewer.html
+│   ├── css/
+│   ├── js/
+│   │   ├── frontend.js
+│   │   ├── modal.js
+│   │   └── ui-helpers.js
+│   └── assets/
+│
+├── backend/
+│   ├── ai/
+│   │   ├── openai-client.js      ← calls AI API
+│   │   └── prompt-builder.js     ← builds prompts for flashcards
+│   │
+│   ├── card-generator.js         ← orchestrates AI + parsing
+│   ├── storage.js
+│   └── parser/
+│
+└── index.html
