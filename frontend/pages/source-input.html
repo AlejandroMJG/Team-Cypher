@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Flashcards | Team Cipher</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="app-page">
+  <header class="topbar">
+    <a class="brand-link" href="../index.html">Team Cipher</a>
+    <a class="ghost-button" href="../index.html">Home</a>
+  </header>
+
+  <main class="page-shell input-shell">
+    <section class="page-heading" aria-labelledby="source-title">
+      <p class="eyebrow">Flashcard generator</p>
+      <h1 id="source-title">What are we studying?</h1>
+      <p>Paste notes, a study topic, or a short source passage.</p>
+    </section>
+
+    <section class="panel input-panel" aria-label="Source input form">
+      <label for="sourceText">Source text</label>
+      <textarea
+        id="sourceText"
+        placeholder="Example: Explain photosynthesis, the causes of World War I, or the OSI networking model."
+      ></textarea>
+
+      <div class="form-grid">
+        <div>
+          <label for="cardCount">Number of cards</label>
+          <select id="cardCount">
+            <option value="3">3 cards</option>
+            <option value="5" selected>5 cards</option>
+            <option value="8">8 cards</option>
+            <option value="10">10 cards</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="primary-button" id="generateBtn" type="button">Generate Flashcards</button>
+      <p class="status-message" id="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="../js/source-input.js"></script>
+</body>
+</html>

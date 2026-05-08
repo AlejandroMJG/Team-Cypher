@@ -1,19 +1,10 @@
 {
-  "name": "backend",
+  "name": "team-cipher-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "card-generator.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "AI flashcard proxy for Team Cipher",
+  "main": "server.js",
   "type": "module",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "node-fetch": "^3.3.2"
+  "scripts": {
+    "start": "node server.js"
   }
 }

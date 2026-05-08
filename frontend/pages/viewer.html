@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Flashcards | Team Cipher</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="app-page">
+  <header class="topbar">
+    <a class="brand-link" href="../index.html">Team Cipher</a>
+    <nav class="nav-actions" aria-label="Viewer navigation">
+      <a class="ghost-button" href="source-input.html">New Set</a>
+      <a class="ghost-button" href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="page-shell viewer-shell">
+    <section class="viewer-header" aria-labelledby="viewer-title">
+      <div>
+        <p class="eyebrow">Review mode</p>
+        <h1 id="viewer-title">Your Flashcards</h1>
+      </div>
+      <p class="card-progress" id="cardProgress">0 / 0</p>
+    </section>
+
+    <section class="review-stage" aria-live="polite">
+      <button class="flashcard" id="flashcard" type="button" aria-label="Flip flashcard">
+        <span class="card-side-label" id="sideLabel">Question</span>
+        <span class="flashcard-text" id="flashcardText">No flashcards yet.</span>
+        <span class="flip-hint">Click to flip</span>
+      </button>
+    </section>
+
+    <section class="review-controls" aria-label="Flashcard controls">
+      <button class="secondary-button" id="prevBtn" type="button">Previous</button>
+      <button class="secondary-button" id="nextBtn" type="button">Next</button>
+    </section>
+
+    <section class="empty-state" id="emptyState" hidden>
+      <h2>No cards generated yet</h2>
+      <p>Create a set first, then come back here to review.</p>
+      <a class="primary-button" href="source-input.html">Create Flashcards</a>
+    </section>
+  </main>
+
+  <script src="../js/viewer.js"></script>
+</body>
+</html>

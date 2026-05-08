@@ -10,7 +10,7 @@ export async function askAI(prompt) {
   });
 
   if (!response.ok) {
-    throw new Error("AI request failed: " + response.status);
+    throw new Error(`AI request failed: ${response.status}`);
   }
 
   return await response.json();
